@@ -24,24 +24,25 @@ When you start to collaborate a project, you should:
   <claude's answer>
   ```
 
-- **Always** create `PLAN.md` for the project, you will use this file to:
-  - Keep record of the plan you created for the project.
-  - The plan I made for the project, which you should follow
+- **Always** create `plans/plan_<sequence number>.md` for the project, you will use this file to:
+  - When I ask you to create a new plan, you should create file `plans/plan_<sequence number>.md` using the `<Plan Template>`, `<sequence number>` should be the next integer in sequence, starting from `000`.
 
-The plan should have this format:
+Here is the `<Plan Template>`
 
 ```markdow
 
-## YYYY-MM-DD HH:MM:SS
+# Plan <Sequence Number>
 
-### <Task Summary>
+- Time: <date>
 
-Task objective and details.
+## Objectives
 
-### <Todos>
-
-
+## Details
 ```
+
+- **Always** create `tasks/task_<sequence number>.md` when you follow `plans/plan<sequence number>.md` to finish your job, the plan and task should be in one-to-one correspondence, you should use the `<Task Template>` to create the file, `<sequence number>` should be the next integer in sequence, starting from `000`.
+  - When you generate todo lists, you should put todo lists in this file
+  - When you finish a todos, you should update this file
 
 ### Writing Style
 
